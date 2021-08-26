@@ -14,7 +14,7 @@ router.get("/api/workouts", (req, res) => {
   router.get("api/workouts/range", (req, res) => {
     db.find()
       .then(dbData => {
-        res.json(dbData;
+        res.json(dbData);
       })
       .catch(err => {
         res.status(400).json(err);
